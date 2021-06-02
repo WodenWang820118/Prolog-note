@@ -1,4 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%% create a binary tree %%%%%%%%%%%%%%%%%%%%%%%%
+% queries
+% ?-insertnode([7,6,12],nil,Tree).
+% Tree = t(7, t(6, nil, nil), t(12, nil, nil)).
+
+% ?- createnode(nil,7,T1),createnode(T1,12,T2),createnode(T2,6,T3)
+% T1 = t(7, nil, nil),
+% T2 = t(7, nil, t(12, nil, nil)),
+% T3 = t(7, t(6, nil, nil), t(12, nil, nil)).
 
 % it is true when X is greater than Y
 gt(X,Y):- X > Y.
