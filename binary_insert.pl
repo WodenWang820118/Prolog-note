@@ -1,28 +1,3 @@
-% binary tree implementation
-
-% X is greater than Y
-gt(X,Y):- X > Y.
-
-%%%%%%%%%%%%%%%%%%%%%%%% search element in a binary tree %%%%%%%%%%%%%%%%%%%%%%%%
-
-% if the root itself is X, then X
-% base case
-in(X, t(_, X, _)).
-
-% if the X is smaller, search the Left subtree
-% Left is also denoted as a subtree
-% in (+key, +Node)
-in(X, t(Left, Root, _)):-
-  gt(Root, X),
-  in(X, Left).
-
-in(X, t(_ , Root, Right)):-
-  gt(X,Root),
-  in(X, Right).
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% search element in a binary tree ends %%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%% create a binary tree %%%%%%%%%%%%%%%%%%%%%%%%
 
 % it is true when X is greater than Y
