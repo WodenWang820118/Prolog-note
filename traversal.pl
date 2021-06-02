@@ -1,6 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%% traversal in a binary tree %%%%%%%%%%%%%%%%%%%%%%%%
 :-ensure_loaded(binary_insert).
 
+% the tree structure
+%       7
+%      / \
+%     6   12
+%    /   /
+%   4   8
+
 % inorder
 % ?- insertnode([7,12,6,4,8],nil,Tree),inorder(Tree,List).
 % Tree = t(7, t(6, t(4, nil, nil), nil), t(12, t(8, nil, nil), nil)),
