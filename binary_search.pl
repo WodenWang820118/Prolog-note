@@ -2,7 +2,7 @@
 % import the module to be used
 :-ensure_loaded(binary_insert).
 
-% usage, first get a tree
+% usage, first get a tree. If it's true, Tree will show its structure, otherwise, false
 % ?-insertnode([7,6,12],nil,Tree), in(6,Tree)
 % Tree = t(7, t(6, nil, nil), t(12, nil, nil)).
 
