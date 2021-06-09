@@ -2,6 +2,11 @@
 % import the module to be used
 :-ensure_loaded(binary_insert).
 
+% usage
+% insertnode([7,12,6,4,8],nil,Tree),height(Tree,Height).
+% Tree = t(7, t(6, t(4, nil, nil), nil), t(12, t(8, nil, nil), nil)),
+% Height = 3.
+
 % height of an empty tree is 0
 height(nil,0).
 
